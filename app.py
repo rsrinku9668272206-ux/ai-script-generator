@@ -29,7 +29,7 @@ if st.button("Generate Now"):
                     f"about the following topic: '{topic}'. Keep the tone clear, informative, and captivating."
                 )
                 response = client.models.generate_content(
-                    model="gemini-2.5-flash",
+                    model="gemini-2.0-flash",
                     contents=prompt,
                 )
                 st.success("Completed!")
